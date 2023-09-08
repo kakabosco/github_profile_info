@@ -1,18 +1,20 @@
+import Input from "./components/Input";
 import Profile from "./components/Profile";
-// import Form from "./components/Form";
 import ReposList from "./components/ReposList";
+// import Form from "./components/Form";
 import { useState } from "react";
 
 function App() {
     const [username, setUsername] = useState("");
+
     return (
         <>
-            <input type="text" onBlur={(e) => setUsername(e.target.value)} />
+            <Input userSubmit={setUsername} />
 
             {username.length > 0 && (
                 <>
-                <Profile username={username} />
-                <ReposList username={username} />
+                    <Profile username={username} />
+                    <ReposList username={username} />
                 </>
             )}
 

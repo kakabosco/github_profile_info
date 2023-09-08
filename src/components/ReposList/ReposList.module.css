@@ -1,13 +1,43 @@
+.errorMsg {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: #e9a1a1;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.loadingMsg {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: var(--secondaryColor);
+    color: var(--textColor);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
+    margin-bottom: 80px;
 }
 
 .listItem {
     list-style: none;
     padding: 16px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 }
 
 .listItemName b,
